@@ -91,14 +91,22 @@
             box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
         }
 
-        /* Services Grid */
-        .services {
+        /* Grid Layouts */
+        .grid-container {
             max-width: 1050px;
-            margin: 0 auto 100px;
+            margin: 0 auto 60px;
             padding: 0 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+            width: 100%;
         }
 
         .card {
@@ -169,6 +177,7 @@
             padding: 100px 20px;
             text-align: center;
             position: relative;
+            margin-top: 60px;
         }
 
         .about-section::before {
@@ -224,7 +233,7 @@
         <a href="https://wa.me/27635023374?text=Hi%20Telane!%20I%20found%20your%20website%20and%20I'd%20love%20to%20chat%20about%20tutoring%20for%20my%20child." class="btn" target="_blank">Book a Session</a>
     </header>
 
-    <section class="services">
+    <section class="grid-container">
         <div class="card">
             <div class="card-icon">📚</div>
             <h3>Grade 1 to 6 (Foundation & Inter.)</h3>
@@ -247,11 +256,37 @@
         </div>
     </section>
 
+    <h2 class="section-title">Subjects & Rates</h2>
+    <section class="grid-container">
+        <div class="card">
+            <div class="card-icon">✏️</div>
+            <h3>Subjects Covered</h3>
+            <p>Targeted help where they need it most.</p>
+            <ul>
+                <li>Mathematics</li>
+                <li>English (HL & FAL)</li>
+                <li>Afrikaans</li>
+                <li>Natural Sciences</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-icon">💳</div>
+            <h3>Pricing Packages</h3>
+            <p>Simple, transparent hourly rates.</p>
+            <ul>
+                <li>R200 per hour (Online via Zoom)</li>
+                <li>R250 per hour (Private In-Person)</li>
+                <li>*In-person sessions incur a travel surcharge based on location</li>
+                <li>First assessment session is free</li>
+            </ul>
+        </div>
+    </section>
+
     <section class="about-section">
         <div class="about-content">
             <h2>Targeted support, not just extra homework.</h2>
             <p>As a qualified educator with an ECD background and years of experience teaching up to Grade 9, I know exactly where the curriculum trips students up. I don't just give them more worksheets; I identify the specific concepts they missed in the classroom and teach them in a way that actually makes sense. Available for online sessions or private in-person tutoring in Randburg & surrounds.</p>
-            <a href="https://wa.me/27635023374?text=Hi%20Telane!%20I%20found%20your%20website%20and%20I'd%20love%20to%20chat%20about%20tutoring%20for%20my%20child." class="btn" target="_blank">Check Availability & Rates</a>
+            <a href="https://wa.me/27635023374?text=Hi%20Telane!%20I%20found%20your%20website%20and%20I'd%20love%20to%20chat%20about%20tutoring%20for%20my%20child." class="btn" target="_blank">Check Availability</a>
         </div>
     </section>
 

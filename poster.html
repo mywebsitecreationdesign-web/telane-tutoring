@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Poster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .poster {
+            width: 800px;
+            height: 1100px; /* Made the poster slightly taller so content doesn't cut off */
+            background-color: #ffffff;
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 30px 30px;
+            border: 8px solid #1e293b;
+            border-radius: 24px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            padding: 80px 60px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .poster::after {
+            content: '';
+            position: absolute;
+            bottom: 50px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .content-bottom {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 4rem;
+            color: #1e293b;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+            letter-spacing: -1px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #64748b;
+            margin-bottom: 50px;
+        }
+
+        .bullets {
+            margin-bottom: 40px;
+        }
+
+        .bullet-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .bullet-icon {
+            font-size: 1.8rem;
+            margin-right: 20px;
+            color: #0ea5e9;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #ffffff;
+            font-size: 1.9rem;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-section {
+            border-top: 3px dashed #cbd5e1;
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-line {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1e293b;
+        }
+
+        .contact-line span {
+            color: #8b5cf6;
+            margin-right: 15px;
+            font-size: 2.2rem;
+        }
+
+        .location-tag {
+            font-size: 1.3rem;
+            color: #64748b;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster">
+        <div class="content">
+            <h1>Focused Tutoring<br><span class="gradient-text">For Grades 1 - 9</span></h1>
+            <div class="subtitle">Helping your child catch up, keep up, and thrive.</div>
+            
+            <div class="bullets">
+                <div class="bullet-item">
+                    <div class="bullet-icon">✦</div>
+                    <div>Patient, one-on-one help with tricky subjects</div>
+                </div>
+                <div class="bullet-item">
+                    <div class="bullet-icon">✦</div>
+                    <div>Breaking down confusing homework & assignments</div>
+                </div>
+                <div class="bullet-item">
+                    <div class="bullet-icon">✦</div>
+                    <div>Building real confidence for tests and exams</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-bottom">
+            <div class="highlight-box">
+                <p>R200/hr Online • R250/hr In-Person</p>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-line">
+                    <span>📱</span> WhatsApp Telane: 063 502 3374
+                </div>
+                <div class="location-tag">📍 In-person around Randburg (travel surcharge applies) or Online via Zoom.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
