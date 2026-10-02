@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telane | Grade 1-9 Tutoring Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #0ea5e9;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-light);
+            background-image: 
+                radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 40%);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        /* Hero Section */
+        header {
+            padding: 120px 20px 80px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+        }
+
+        header h1 span {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 45px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #ffffff;
+            padding: 16px 45px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
+        }
+
+        /* Services Grid */
+        .services {
+            max-width: 1050px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 45px 35px;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(139, 92, 246, 0.1);
+            border-color: rgba(139, 92, 246, 0.2);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: #f1f5f9;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .card ul li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 1.2rem;
+            top: -2px;
+        }
+
+        /* About & Footer */
+        .about-section {
+            background-color: #f8fafc;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #f8fafc;
+            transform: skewY(-2deg);
+            z-index: 0;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 45px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 1rem;
+            background-color: #f8fafc;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.8rem; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Helping your child beat the <span>CAPS Curriculum.</span></h1>
+        <p>Hi, I'm Telane. The school system moves incredibly fast, and it is easy to fall behind. I provide focused, one-on-one tutoring for Grade 1 to 9 to close the knowledge gaps, master core subjects, and build real academic confidence.</p>
+        <a href="https://wa.me/27635023374?text=Hi%20Telane!%20I%20found%20your%20website%20and%20I'd%20love%20to%20chat%20about%20tutoring%20for%20my%20child." class="btn" target="_blank">Book a Session</a>
+    </header>
+
+    <section class="services">
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Grade 1 to 6 (Foundation & Inter.)</h3>
+            <p>The jump from learning to read, to reading to learn. I help students handle the sudden increase in workload when they enter Grade 4.</p>
+            <ul>
+                <li>Mastering foundational Mathematics</li>
+                <li>Reading comprehension & Phonics</li>
+                <li>Building independent homework habits</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Grade 7 to 9 (Senior Phase)</h3>
+            <p>The pressure starts here. We focus on keeping grades high so they are fully prepared for high school and Grade 10 subject choices.</p>
+            <ul>
+                <li>Tackling heavy assignment workloads</li>
+                <li>Effective exam and study techniques</li>
+                <li>Subject-specific revision and catching up</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Targeted support, not just extra homework.</h2>
+            <p>As a qualified educator with an ECD background and years of experience teaching up to Grade 9, I know exactly where the curriculum trips students up. I don't just give them more worksheets; I identify the specific concepts they missed in the classroom and teach them in a way that actually makes sense. Available for online sessions or private in-person tutoring in Randburg & surrounds.</p>
+            <a href="https://wa.me/27635023374?text=Hi%20Telane!%20I%20found%20your%20website%20and%20I'd%20love%20to%20chat%20about%20tutoring%20for%20my%20child." class="btn" target="_blank">Check Availability & Rates</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Telane | Professional Private & Online Tutoring</p>
+    </footer>
+
+</body>
+</html>
